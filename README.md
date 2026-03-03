@@ -1,49 +1,48 @@
 <div align="center">
     <img src="Img/slowlife.jpg" width="350">
-    
 </div>
 
-# <div align="center">**Analisis Sentimen Gaya Hidup *Slow Live* pada Media Sosial Twitter (X)**</div>
+# <div align="center">**Sentiment Analysis of the *Slow Live* Lifestyle on Twitter (X)**</div>
 
 <p align="center">
-Gambar di atas merupakan kerangka konsep gaya hidup <i>Slow Life</i> yang menjadi dasar analisis dalam penelitian ini.
+The image above illustrates the conceptual framework of the <i>Slow Live</i> lifestyle, which serves as the foundation of this research.
 </p>
 
 ---
 
-## 📌 Latar Belakang
+## 📌 Background
 
-Perkembangan media sosial, khususnya Twitter (X), menjadi ruang diskusi publik mengenai berbagai fenomena sosial, termasuk tren gaya hidup <i>Slow Life</i>. Konsep ini menekankan pada kehidupan yang lebih sadar, tenang, dan bermakna di tengah budaya serba cepat.
+The rapid growth of social media, particularly Twitter (X), has created a public space for discussions on various social phenomena, including the emerging trend of the <i>Slow Live</i> lifestyle. This concept emphasizes a more mindful, balanced, and meaningful way of Live amid the fast-paced modern culture.
 
-Penelitian ini bertujuan untuk menganalisis bagaimana sentimen masyarakat terhadap gaya hidup <i>Slow Life</i> yang diekspresikan melalui tweet.
-
----
-
-## 🎯 Tujuan Penelitian
-
-1. Mengidentifikasi sentimen masyarakat terhadap gaya hidup <i>Slow Life</i>.
-2. Mengklasifikasikan tweet ke dalam kategori Positif, Negatif, Netral, dan Others.
-3. Membandingkan performa beberapa metode ekstraksi fitur dan model machine learning.
+This study aims to analyze public sentiment toward the <i>Slow Live</i> lifestyle as expressed through tweets.
 
 ---
 
-## 🧠 Metodologi Singkat
+## 🎯 Research Objectives
 
-- **Sumber Data**: Twitter (X)
-- **Tahapan**:
-  - Data Crawling (01 Jan 2020 s.d 01 Jan 2025)
-  - Pelabelan Manual (Positif, Negatif, Netral, Others)
+1. To identify public sentiment toward the <i>Slow Live</i> lifestyle.
+2. To classify tweets into four categories: Positive, Negative, Neutral, and Others.
+3. To compare the performance of various feature extraction methods and machine learning models.
+
+---
+
+## 🧠 Methodology Overview
+
+- **Data Source**: Twitter (X)
+- **Research Stages**:
+  - Data Crawling (January 1, 2020 – January 1, 2025)
+  - Manual Labeling (Positive, Negative, Neutral, Others)
   - Preprocessing
   - Feature Extraction (BoW, N-gram, TF-IDF, IndoBERTweet)
-  - Modeling & Evaluasi
-- **Eksperimen**:
-  - Biner Class (others dan non others)
-  - Multi Class (Positif, Negatif, Netral)
-  - Multi Class Data Ori/Data Aug (Positif, Negatif, Netral, Others)
+  - Modeling & Evaluation
+- **Experimental Scenarios**:
+  - Binary Classification (Others vs Non-Others)
+  - Multi-Class Classification (Positive, Negative, Neutral)
+  - Multi-Class (Original vs Augmented Data: Positive, Negative, Neutral, Others)
 
 ---
 
-## 📊 Distribusi Data Eksperimen
+## 📊 Experimental Data Distribution
 
 <div align="center">
 
@@ -51,30 +50,29 @@ Penelitian ini bertujuan untuk menganalisis bagaimana sentimen masyarakat terhad
 <tr>
 <td align="center">
 <img src="Img/1.png" width="150"><br>
-<b>Biner Class</b><br>
-Distribusi data training <i>Others</i> dan <i>Non-Others</i>. 
-Eksperimen ini bertujuan untuk memisahkan data relevan dan tidak relevan terhadap topik <i>Slow Life</i>.
+<b>Binary Classification</b><br>
+Training data distribution between <i>Others</i> and <i>Non-Others</i>.  
+This experiment aims to separate relevant and irrelevant tweets related to the <i>Slow Live</i> topic.
 </td>
 
 <td align="center">
 <img src="Img/2.png" width="150"><br>
-<b>Multi Class</b><br>
-Distribusi data training <i>Positif</i>, <i>Negatif</i>, dan <i>Netral</i> 
-dengan memisahkan kategori kelas Other.
+<b>Multi-Class</b><br>
+Training data distribution across <i>Positive</i>, <i>Negative</i>, and <i>Neutral</i> categories, excluding the <i>Others</i> class.
 </td>
 
 <td align="center">
 <img src="Img/3.png" width="150"><br>
-<b>Multi Class (Data Original)</b><br>
-Distribusi kelas <i>Positif</i>, <i>Negatif</i>, <i>Netral</i>, dan <i>Others</i> 
-Menggunakan data Original <i>Imbalance</i>.
+<b>Multi-Class (Original Data)</b><br>
+Distribution of <i>Positive</i>, <i>Negative</i>, <i>Neutral</i>, and <i>Others</i> classes  
+using the original dataset <i>(imbalanced data)</i>.
 </td>
 
 <td align="center">
 <img src="Img/4.png" width="150"><br>
-<b>Multi Class (Data Augmentation)</b><br>
-Distribusi kelas <i>Positif</i>, <i>Negatif</i>, <i>Netral</i>, dan <i>Others</i> 
-Menggunakan teknik augmentasi <i>Synonym Replacement</i> dengan memanfaatkan model bahasa <i>XLM-RoBERTa</i>.
+<b>Multi-Class (Data Augmentation)</b><br>
+Distribution after applying <i>Synonym Replacement</i>  
+using the <i>XLM-RoBERTa</i> language model to reduce class imbalance.
 </td>
 </tr>
 </table>
@@ -83,15 +81,15 @@ Menggunakan teknik augmentasi <i>Synonym Replacement</i> dengan memanfaatkan mod
 
 ---
 
-## 🔎 Analisis Kesalahan Prediksi Model
+## 🔎 Error Analysis of Model Predictions
 
-Berikut merupakan analisis pola kesalahan spesifik yang dilakukan model, pada berbagai skenario klasifikasi:
+Below are selected examples of model misclassifications across different experimental scenarios:
 
-| No | Skenario Klasifikasi | Sampel + True Label | Predict Label | Hasil Analisis |
-|----|----------------------|---------------------|---------------|----------------|
-| 1 | **Biner Klasifikasi** (Other vs Non-Other) | **Tweet:** @kennyivan wkwkwkwk coba diriset... efek lebaran haji ken slow life dulu… <br> **True Label:** Non-Other (Positif) | Other | Sampel ini mengandung kata kunci *“slow life”*. Model belum mampu memahami sentimen implisit yang tidak diucapkan secara langsung. Meskipun model mengenali istilah tersebut, model gagal memahami konteks perayaan pasca lebaran yang bermakna positif. |
-| 2 | **Multi-kelas** (Netral, Positif, Negatif) | **Tweet:** Yo.opo se slow living iku <br> **True Label:** Netral | Negatif | Kalimat ini merupakan pertanyaan mengenai *slow living*. Model gagal mengenali bahwa frasa "yo opo se iku" menunjukkan bentuk pertanyaan, bukan keluhan atau sarkasme. |
-| 3 | **Multi-kelas** (Netral, Positif, Negatif, Other) | **Tweet:** slow living tidak berlaku untuk yang hidup dalam tekanan dan tuntutan warga sekitar. <br> **True Label:** Negatif | Netral | Kalimat mengandung kata “tidak berlaku”, “tekanan”, dan “tuntutan” yang menunjukkan sentimen negatif. Namun model menganggapnya sebagai deskripsi sosial yang netral. |
-| 4 | **Multi-kelas** (Netral, Positif, Negatif, Other) | **Tweet:** memang slow living di klaten tidak tergantikan <br> **True Label:** Positif | Negatif | Model salah menginterpretasikan frasa "tidak tergantikan" sebagai sentimen negatif karena terlalu fokus pada kata "tidak". Ini menunjukkan model masih kesulitan memahami makna positif yang tersirat melalui negasi. |
+| No | Classification Scenario | Sample + True Label | Predicted Label | Analysis |
+|----|--------------------------|---------------------|-----------------|----------|
+| 1 | **Binary Classification** (Others vs Non-Others) | **Tweet:** @kennyivan wkwkwkwk coba diriset... efek lebaran haji ken slow life dulu… <br> **True Label:** Non-Other (Positive) | Other | The sample contains the keyword *“slow life”*. However, the model failed to understand the implicit sentiment. Although it recognizes the term, it does not capture the positive contextual meaning related to post-holiday relaxation. |
+| 2 | **Multi-Class** (Neutral, Positive, Negative) | **Tweet:** Yo.opo se slow Living iku <br> **True Label:** Neutral | Negative | This sentence is a question about *slow living*. The model failed to recognize that the phrase indicates a question rather than a complaint or sarcasm. |
+| 3 | **Multi-Class** (Neutral, Positive, Negative, Others) | **Tweet:** slow living tidak berlaku untuk yang hidup dalam tekanan dan tuntutan warga sekitar. <br> **True Label:** Negative | Neutral | The sentence contains clearly negative expressions such as “not applicable,” “pressure,” and “demands.” However, the model interpreted it as a neutral social description. |
+| 4 | **Multi-Class** (Neutral, Positive, Negative, Others) | **Tweet:** memang slow living di klaten tidak tergantikan <br> **True Label:** Positive | Negative | The model misinterpreted the phrase “not replaceable” as negative due to focusing solely on the negation word “not.” This indicates difficulty in understanding implicitly positive expressions formed through negation. |
 
 ---
