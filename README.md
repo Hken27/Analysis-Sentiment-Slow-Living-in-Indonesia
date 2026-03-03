@@ -175,7 +175,7 @@ Overall class distribution.
 
 <table>
 <td align="center">
-<img src="Img/wc.png" width="300"><br>
+<img src="Img/wc.png" width="700"><br>
 <b>Word Cloud Visualization</b><br>
 Visualization of the most frequent words appearing in the <i>Slow Life</i> tweet dataset.
 </td>
