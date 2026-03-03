@@ -60,21 +60,21 @@ Eksperimen ini bertujuan untuk memisahkan data relevan dan tidak relevan terhada
 <img src="Img/2.png" width="150"><br>
 <b>Multi Class</b><br>
 Distribusi data training <i>Positif</i>, <i>Negatif</i>, dan <i>Netral</i> 
-dengan memisahkan kategori kelas other.
+dengan memisahkan kategori kelas Other.
 </td>
 
 <td align="center">
 <img src="Img/3.png" width="150"><br>
 <b>Multi Class (Data Original)</b><br>
 Distribusi kelas <i>Positif</i>, <i>Negatif</i>, <i>Netral</i>, dan <i>Others</i> 
-Menggunakan data Original (Imbalance).
+Menggunakan data Original <i>Imbalance</i>.
 </td>
 
 <td align="center">
 <img src="Img/4.png" width="150"><br>
 <b>Multi Class (Data Augmentation)</b><br>
 Distribusi kelas <i>Positif</i>, <i>Negatif</i>, <i>Netral</i>, dan <i>Others</i> 
-Setelah dilakukan penyeimbangan data (Balance) menggunakan teknik augmentasi (Synonym Replacement dengan memanfaatkan model bahasa XLM-RoBERTa).
+Menggunakan teknik augmentasi <i>Synonym Replacement</i> dengan memanfaatkan model bahasa <i>XLM-RoBERTa</i>.
 </td>
 </tr>
 </table>
@@ -85,7 +85,7 @@ Setelah dilakukan penyeimbangan data (Balance) menggunakan teknik augmentasi (Sy
 
 ## 🔎 Analisis Kesalahan Prediksi Model
 
-Berikut merupakan beberapa contoh kesalahan prediksi model pada berbagai skenario klasifikasi:
+Berikut merupakan analisis pola kesalahan spesifik yang dilakukan model, pada berbagai skenario klasifikasi:
 
 | No | Skenario Klasifikasi | Sampel + True Label | Predict Label | Hasil Analisis |
 |----|----------------------|---------------------|---------------|----------------|
