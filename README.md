@@ -78,27 +78,62 @@ IndoBERTweet is a pre-trained transformer-based language model specifically opti
 
 ---
 
-## 📈 Evaluation Strategy
+## 📈 Evaluation Strategy & Example Results
 
-Model performance is evaluated using the following metrics and visualization techniques:
+Model performance is evaluated using several quantitative metrics and visual analysis. Below are example outputs for each evaluation method.
+
+---
 
 ### 1️⃣ Confusion Matrix
-Used to analyze classification performance across each class and identify patterns of misclassification.
+
+The confusion matrix provides a detailed breakdown of prediction results for each class, allowing identification of misclassification patterns.
+
+<div align="center">
+    <img src="Img/conf.png" width="400"><br>
+    <b>Figure 1.</b> Example Confusion Matrix from Biner-Class Classification
+</div>
+
+The matrix shows how many samples were correctly classified (diagonal values) and how many were misclassified across sentiment categories.
+
+---
 
 ### 2️⃣ Classification Report
-Includes:
-- Accuracy
-- Precision
-- Recall
+
+The classification report summarizes key evaluation metrics:
+
+- Accuracy  
+- Precision  
+- Recall  
 - F1-Score  
 
-This provides a detailed quantitative evaluation of model performance for each sentiment class.
+
+| Class | Precision | Recall | F1-Score | Support |
+|-------|-----------|--------|----------|---------|
+| 0 | 0.71 | 0.65 | 0.68 | 55 |
+| 1 | 0.87 | 0.88 | 0.88 | 164 |
+| 2 | 0.75 | 0.84 | 0.79 | 43 |
+| 3 | 0.98 | 0.97 | 0.98 | 251 |
+| **Accuracy** |  |  | **0.90** | 513 |
+| **Macro Avg** | 0.83 | 0.84 | 0.83 | 513 |
+| **Weighted Avg** | 0.90 | 0.90 | 0.90 | 513 |
+
+This report allows performance comparison per class performance issues. Example Classification Report from Multi-Class Data Augmentation.
+
+---
 
 ### 3️⃣ Learning Curve
-Learning curves are analyzed to evaluate:
-- Model generalization capability
-- Overfitting or underfitting tendencies
-- Training vs validation performance trends
+
+The learning curve evaluates model generalization by comparing training and validation performance across different dataset sizes.
+
+<div align="center">
+    <img src="Img/curv.png" width="500"><br>
+    <b>Figure 3.</b> Example Learning Curve Visualization from Multi-Class Data Augmentation
+</div>
+
+From this visualization, we can observe:
+- Overfitting (large gap between training and validation score)
+- Underfitting (both scores low)
+- Good generalization (scores converge at high value)
 
 ---
 
