@@ -37,8 +37,48 @@ Penelitian ini bertujuan untuk menganalisis bagaimana sentimen masyarakat terhad
   - Feature Extraction (BoW, N-gram, TF-IDF, IndoBERTweet)
   - Modeling & Evaluasi
 - **Eksperimen**:
-  - biner (others dan non others)
-  - 3 Kelas (Positif, Negatif, Netral)
-  - 4 Kelas (Positif, Negatif, Netral, Others)
+  - Biner Class (others dan non others)
+  - Multi Class (Positif, Negatif, Netral)
+  - Multi Class Data Ori/Data Aug (Positif, Negatif, Netral, Others)
+
+---
+
+## 📊 Distribusi Data Eksperimen
+
+<div align="center">
+
+<table>
+<tr>
+<td align="center">
+<img src="Img/1.png" width="300"><br>
+<b>Biner Class</b><br>
+Distribusi data training <i>Others</i> dan <i>Non-Others</i>. 
+Eksperimen ini bertujuan untuk memisahkan data relevan dan tidak relevan terhadap topik <i>Slow Life</i>.
+</td>
+
+<td align="center">
+<img src="Img/2.png" width="300"><br>
+<b>Multi Class</b><br>
+Distribusi data training <i>Positif</i>, <i>Negatif</i>, dan <i>Netral</i> 
+dengan memisahkan kategori kelas other.
+</td>
+
+<td align="center">
+<img src="Img/3.png" width="300"><br>
+<b>Multi Class (Data Original)</b><br>
+Distribusi kelas <i>Positif</i>, <i>Negatif</i>, <i>Netral</i>, dan <i>Others</i> 
+Menggunakan data Original (Imbalance).
+</td>
+
+<td align="center">
+<img src="Img/4.png" width="300"><br>
+<b>Multi Class (Data Augmentation)</b><br>
+Distribusi kelas <i>Positif</i>, <i>Negatif</i>, <i>Netral</i>, dan <i>Others</i> 
+Setelah dilakukan penyeimbangan data (Balance) menggunakan teknik augmentasi (Synonym Replacement dengan memanfaatkan model bahasa XLM-RoBERTa).
+</td>
+</tr>
+</table>
+
+</div>
 
 ---
