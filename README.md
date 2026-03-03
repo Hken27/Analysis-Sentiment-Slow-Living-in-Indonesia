@@ -1,14 +1,14 @@
 <div align="center">
     <img src="Img/slowlife.jpg" width="350"><br><br>
-    <b>Figure 1.</b> Conceptual Framework of the <i>Slow Living</i> Lifestyle
+    <b>Conceptual Framework</b> of the <i>Slow Life</i> Lifestyle
 </div>
 
 <h1 align="center">
-Sentiment Analysis of the <i>Slow Living</i> Lifestyle on Twitter (X)
+Sentiment Analysis of the <i>Slow Life</i> Lifestyle on Twitter (X)
 </h1>
 
 <p align="center">
-This study analyzes public sentiment toward the <i>Slow Living</i> lifestyle as expressed on Twitter (X).
+This study analyzes public sentiment toward the <i>Slow Life</i> lifestyle as expressed on Twitter (X).
 </p>
 
 ---
