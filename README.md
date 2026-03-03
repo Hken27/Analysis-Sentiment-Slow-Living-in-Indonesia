@@ -165,7 +165,7 @@ From this visualization, we can observe:
 <table>
 <tr>
 <td align="center">
-<img src="Img/disc.png" width="300"><br>
+<img src="Img/disc.png" width="500"><br>
 <b>Initial Dataset Distribution</b><br>
 Overall class distribution.
 </td>
