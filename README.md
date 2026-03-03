@@ -1,26 +1,25 @@
 <div align="center">
     <img src="Img/slowlife.jpg" width="350">
+    <b>The image above illustrates the conceptual framework of the <i>Slow Life</i> lifestyle, which serves as the foundation of this research.</b>
 </div>
 
-# <div align="center">**Sentiment Analysis of the *Slow Live* Lifestyle on Twitter (X)**</div>
-
 <p align="center">
-The image above illustrates the conceptual framework of the <i>Slow Live</i> lifestyle, which serves as the foundation of this research.
+Sentiment Analysis of the *Slow Life* Lifestyle on Twitter (X)
 </p>
 
 ---
 
-## 📌 Background
+## 📌 Intro
 
-The rapid growth of social media, particularly Twitter (X), has created a public space for discussions on various social phenomena, including the emerging trend of the <i>Slow Live</i> lifestyle. This concept emphasizes a more mindful, balanced, and meaningful way of Live amid the fast-paced modern culture.
+The rapid growth of social media, particularly Twitter (X), has created a public space for discussions on various social phenomena, including the emerging trend of the <i>Slow Life</i> lifestyle. This concept emphasizes a more mindful, balanced, and meaningful way of Life amid the fast-paced modern culture.
 
-This study aims to analyze public sentiment toward the <i>Slow Live</i> lifestyle as expressed through tweets.
+This study aims to analyze public sentiment toward the <i>Slow Life</i> lifestyle as expressed through tweets.
 
 ---
 
 ## 🎯 Research Objectives
 
-1. To identify public sentiment toward the <i>Slow Live</i> lifestyle.
+1. To identify public sentiment toward the <i>Slow Life</i> lifestyle.
 2. To classify tweets into four categories: Positive, Negative, Neutral, and Others.
 3. To compare the performance of various feature extraction methods and models.
 
@@ -148,7 +147,7 @@ From this visualization, we can observe:
 <img src="Img/1.png" width="150"><br>
 <b>Binary Classification</b><br>
 Training data distribution between <i>Others</i> and <i>Non-Others</i>.  
-This experiment aims to separate relevant and irrelevant tweets related to the <i>Slow Live</i> topic.
+This experiment aims to separate relevant and irrelevant tweets related to the <i>Slow Life</i> topic.
 </td>
 
 <td align="center">
