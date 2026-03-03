@@ -1,4 +1,4 @@
-# Analisis Sentimen Gaya Hidup *Slow Living* pada Media Sosial Twitter (X)
+# Analisis Sentimen Gaya Hidup *Slow Live* pada Media Sosial Twitter (X)
 
 
 ## 🖼️ Alur Kerangka Gaya Hidup Slow Life
