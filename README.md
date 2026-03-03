@@ -13,6 +13,24 @@ This study analyzes public sentiment toward the <i>Slow Life</i> lifestyle as ex
 
 ---
 
+## 📂 Dataset Access
+
+The datasets used in this study are available through the following links:
+
+### 1️⃣ Raw Dataset  
+Contains original tweets collected from Twitter (X) prior to preprocessing and labeling.
+
+🔗 [Download Raw Dataset](https://drive.google.com/file/d/1GkX_N8wf8YmQosazKQ1r3ckr1RYxRGw_/view?usp=sharing)
+
+---
+
+### 2️⃣ Preprocessed Dataset  
+Contains cleaned and normalized tweets used for feature extraction and modeling.
+
+🔗 [Download Preprocessed Dataset](https://drive.google.com/file/d/1zCIipCHY3xvFtgGeFBMLWATXsY96czdi/view?usp=sharing)
+
+---
+
 ## 📌 Intro
 
 The rapid growth of social media, particularly Twitter (X), has created a public space for discussions on various social phenomena, including the emerging trend of the <i>Slow Life</i> lifestyle. This concept emphasizes a more mindful, balanced, and meaningful way of Life amid the fast-paced modern culture.
