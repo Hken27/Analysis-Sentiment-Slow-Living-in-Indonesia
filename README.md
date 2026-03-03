@@ -158,7 +158,6 @@ From this visualization, we can observe:
 
 ---
 
-
 ## 📊 Experimental Data Distribution
 
 <div align="center">
@@ -190,6 +189,24 @@ using the original dataset <i>(imbalanced data)</i>.
 <b>Multi-Class (Data Augmentation)</b><br>
 Distribution after applying <i>Synonym Replacement</i>  
 using the <i>XLM-RoBERTa</i> language model to reduce class imbalance.
+</td>
+</tr>
+</table>
+
+<br>
+
+<table>
+<tr>
+<td align="center">
+<img src="Img/disc.png" width="200"><br>
+<b>Initial Dataset Distribution</b><br>
+Overall class distribution.
+</td>
+
+<td align="center">
+<img src="Img/wc.png" width="200"><br>
+<b>Word Cloud Visualization</b><br>
+Visualization of the most frequent words appearing in the <i>Slow Life</i> tweet dataset.
 </td>
 </tr>
 </table>
