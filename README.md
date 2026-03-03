@@ -165,13 +165,17 @@ From this visualization, we can observe:
 <table>
 <tr>
 <td align="center">
-<img src="Img/disc.png" width="200"><br>
+<img src="Img/disc.png" width="300"><br>
 <b>Initial Dataset Distribution</b><br>
 Overall class distribution.
 </td>
+</table>
 
+<br>
+
+<table>
 <td align="center">
-<img src="Img/wc.png" width="200"><br>
+<img src="Img/wc.png" width="300"><br>
 <b>Word Cloud Visualization</b><br>
 Visualization of the most frequent words appearing in the <i>Slow Life</i> tweet dataset.
 </td>
