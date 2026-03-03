@@ -22,7 +22,7 @@ This study aims to analyze public sentiment toward the <i>Slow Live</i> lifestyl
 
 1. To identify public sentiment toward the <i>Slow Live</i> lifestyle.
 2. To classify tweets into four categories: Positive, Negative, Neutral, and Others.
-3. To compare the performance of various feature extraction methods and machine learning models.
+3. To compare the performance of various feature extraction methods and models.
 
 ---
 
