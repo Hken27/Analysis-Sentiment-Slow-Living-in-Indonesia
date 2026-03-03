@@ -20,14 +20,14 @@ The datasets used in this study are available through the following links:
 ### 1️⃣ Raw Dataset  
 Contains original tweets collected from Twitter (X) prior to preprocessing and labeling.
 
-🔗 [Download Raw Dataset](https://drive.google.com/file/d/1GkX_N8wf8YmQosazKQ1r3ckr1RYxRGw_/view?usp=sharing)
+🔗 [Download](https://drive.google.com/file/d/1GkX_N8wf8YmQosazKQ1r3ckr1RYxRGw_/view?usp=sharing)
 
 ---
 
 ### 2️⃣ Preprocessed Dataset  
 Contains cleaned and normalized tweets used for feature extraction and modeling.
 
-🔗 [Download Preprocessed Dataset](https://drive.google.com/file/d/1zCIipCHY3xvFtgGeFBMLWATXsY96czdi/view?usp=sharing)
+🔗 [Download](https://drive.google.com/file/d/1zCIipCHY3xvFtgGeFBMLWATXsY96czdi/view?usp=sharing)
 
 ---
 
