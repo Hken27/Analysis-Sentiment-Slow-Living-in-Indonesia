@@ -29,18 +29,79 @@ This study aims to analyze public sentiment toward the <i>Slow Live</i> lifestyl
 ## 🧠 Methodology Overview
 
 - **Data Source**: Twitter (X)
+
 - **Research Stages**:
   - Data Crawling (January 1, 2020 – January 1, 2025)
   - Manual Labeling (Positive, Negative, Neutral, Others)
   - Preprocessing
   - Feature Extraction (BoW, N-gram, TF-IDF, IndoBERTweet)
   - Modeling & Evaluation
+
 - **Experimental Scenarios**:
   - Binary Classification (Others vs Non-Others)
   - Multi-Class Classification (Positive, Negative, Neutral)
   - Multi-Class (Original vs Augmented Data: Positive, Negative, Neutral, Others)
 
 ---
+
+## 🤖 Modeling Approach
+
+To comprehensively evaluate performance, this study compares three modeling approaches:
+
+### 1️⃣ Machine Learning Models
+Traditional supervised learning algorithms were implemented using BoW, N-gram, and TF-IDF features:
+
+- **Naive Bayes**
+- **Logistic Regression**
+- **Decision Tree**
+- **Random Forest**
+- **Support Vector Machine (SVM)**
+- **XGBoost**
+
+These models aim to evaluate how well classical statistical approaches perform in handling sentiment classification tasks with structured feature extraction.
+
+---
+
+### 2️⃣ Deep Learning Model
+
+- **Long Short-Term Memory (LSTM)**
+
+LSTM is employed to capture sequential dependencies within textual data. Unlike traditional machine learning models, LSTM processes text as ordered sequences, allowing contextual learning across word positions.
+
+---
+
+### 3️⃣ Transfer Learning Model
+
+- **IndoBERTweet**
+
+IndoBERTweet is a pre-trained transformer-based language model specifically optimized for Indonesian Twitter data. It is fine-tuned for sentiment classification tasks in this study. This approach leverages contextual embeddings and semantic understanding beyond surface-level lexical features.
+
+---
+
+## 📈 Evaluation Strategy
+
+Model performance is evaluated using the following metrics and visualization techniques:
+
+### 1️⃣ Confusion Matrix
+Used to analyze classification performance across each class and identify patterns of misclassification.
+
+### 2️⃣ Classification Report
+Includes:
+- Accuracy
+- Precision
+- Recall
+- F1-Score  
+
+This provides a detailed quantitative evaluation of model performance for each sentiment class.
+
+### 3️⃣ Learning Curve
+Learning curves are analyzed to evaluate:
+- Model generalization capability
+- Overfitting or underfitting tendencies
+- Training vs validation performance trends
+
+---
+
 
 ## 📊 Experimental Data Distribution
 
