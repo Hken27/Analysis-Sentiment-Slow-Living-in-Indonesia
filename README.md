@@ -50,28 +50,28 @@ Penelitian ini bertujuan untuk menganalisis bagaimana sentimen masyarakat terhad
 <table>
 <tr>
 <td align="center">
-<img src="Img/1.png" width="300"><br>
+<img src="Img/1.png" width="150"><br>
 <b>Biner Class</b><br>
 Distribusi data training <i>Others</i> dan <i>Non-Others</i>. 
 Eksperimen ini bertujuan untuk memisahkan data relevan dan tidak relevan terhadap topik <i>Slow Life</i>.
 </td>
 
 <td align="center">
-<img src="Img/2.png" width="300"><br>
+<img src="Img/2.png" width="150"><br>
 <b>Multi Class</b><br>
 Distribusi data training <i>Positif</i>, <i>Negatif</i>, dan <i>Netral</i> 
 dengan memisahkan kategori kelas other.
 </td>
 
 <td align="center">
-<img src="Img/3.png" width="300"><br>
+<img src="Img/3.png" width="150"><br>
 <b>Multi Class (Data Original)</b><br>
 Distribusi kelas <i>Positif</i>, <i>Negatif</i>, <i>Netral</i>, dan <i>Others</i> 
 Menggunakan data Original (Imbalance).
 </td>
 
 <td align="center">
-<img src="Img/4.png" width="300"><br>
+<img src="Img/4.png" width="150"><br>
 <b>Multi Class (Data Augmentation)</b><br>
 Distribusi kelas <i>Positif</i>, <i>Negatif</i>, <i>Netral</i>, dan <i>Others</i> 
 Setelah dilakukan penyeimbangan data (Balance) menggunakan teknik augmentasi (Synonym Replacement dengan memanfaatkan model bahasa XLM-RoBERTa).
@@ -80,5 +80,18 @@ Setelah dilakukan penyeimbangan data (Balance) menggunakan teknik augmentasi (Sy
 </table>
 
 </div>
+
+---
+
+## 🔎 Analisis Kesalahan Prediksi Model
+
+Berikut merupakan beberapa contoh kesalahan prediksi model pada berbagai skenario klasifikasi:
+
+| No | Skenario Klasifikasi | Sampel + True Label | Predict Label | Hasil Analisis |
+|----|----------------------|---------------------|---------------|----------------|
+| 1 | **Biner Klasifikasi** (Other vs Non-Other) | **Tweet:** @kennyivan wkwkwkwk coba diriset... efek lebaran haji ken slow life dulu… <br> **True Label:** Non-Other (Positif) | Other | Sampel ini mengandung kata kunci *“slow life”*. Model belum mampu memahami sentimen implisit yang tidak diucapkan secara langsung. Meskipun model mengenali istilah tersebut, model gagal memahami konteks perayaan pasca lebaran yang bermakna positif. |
+| 2 | **Multi-kelas** (Netral, Positif, Negatif) | **Tweet:** Yo.opo se slow living iku <br> **True Label:** Netral | Negatif | Kalimat ini merupakan pertanyaan mengenai *slow living*. Model gagal mengenali bahwa frasa "yo opo se iku" menunjukkan bentuk pertanyaan, bukan keluhan atau sarkasme. |
+| 3 | **Multi-kelas** (Netral, Positif, Negatif, Other) | **Tweet:** slow living tidak berlaku untuk yang hidup dalam tekanan dan tuntutan warga sekitar. <br> **True Label:** Negatif | Netral | Kalimat mengandung kata “tidak berlaku”, “tekanan”, dan “tuntutan” yang menunjukkan sentimen negatif. Namun model menganggapnya sebagai deskripsi sosial yang netral. |
+| 4 | **Multi-kelas** (Netral, Positif, Negatif, Other) | **Tweet:** memang slow living di klaten tidak tergantikan <br> **True Label:** Positif | Negatif | Model salah menginterpretasikan frasa "tidak tergantikan" sebagai sentimen negatif karena terlalu fokus pada kata "tidak". Ini menunjukkan model masih kesulitan memahami makna positif yang tersirat melalui negasi. |
 
 ---
